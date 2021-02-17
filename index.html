@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <section class="price-box">
+      <div class="community">
+        <h2>Join our community</h2>
+        <div class="community__sub">
+          30-day, hassle-free money back guarantee
+        </div>
+        <p>
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+
+      <div class="price">
+        <h2>Monthly Subscription</h2>
+        <div class="price__span">&dollar;29 <span>per month</span></div>
+        <p>Full access for less than &dollar;1 a day</p>
+        <a href="#" class="price__btn btn--show-modal">Sign Up</a>
+      </div>
+
+      <div class="why">
+        <h2>Why Us</h2>
+        <ul class="why__list">
+          <li class="why__item">Tutorials by industry experts</li>
+          <li class="why__item">Peer &amp; expert code review</li>
+          <li class="why__item">Coding exercises</li>
+          <li class="why__item">Access to our GitHub repos</li>
+          <li class="why__item">Community forum</li>
+          <li class="why__item">Flashcard decks</li>
+          <li class="why__item">New videos every week</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Create your account <br />
+        in just few steps
+      </h2>
+      <form class="modal__form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <a href="#" class="price__btn">Next step &rarr;</a>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/payche011" target="_blank"
+          >Pavle Marinkovic</a
+        >.
+      </p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
